@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://tejaswinirtukka-cell.github.io/">
 <meta property="og:image" content="https://tejaswinirtukka-cell.github.io/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237a1f3d'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23fff' font-family='Georgia,serif'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a3354'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23fff' font-family='Georgia,serif'%3ET%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,18 +36,18 @@
 </script>
 <style>
 :root{
-  --bg:#f7f3ec; --card:#fffdf9; --ink:#1d1a17; --muted:#5d554d; --line:#e2d9cb;
-  --accent:#7a1f3d; --accent-ink:#ffffff; --soft:#f0e6e9; --ok:#2f6b4f; --dot:#b9aea0;
+  --bg:#f7f3ec; --card:#fffdf9; --ink:#16202c; --muted:#4f5b6b; --line:#e2d9cb;
+  --accent:#1a3354; --accent-ink:#ffffff; --soft:#e8edf3; --ok:#2f6b4f; --dot:#a5b0be;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#16130f; --card:#201c17; --ink:#f2ece3; --muted:#b4aa9d; --line:#3a332b;
-    --accent:#e58aa7; --accent-ink:#1a1014; --soft:#2c1f25; --ok:#7fcf9f; --dot:#6b6258;
+    --bg:#0f1620; --card:#18222f; --ink:#eaf0f7; --muted:#a9b6c6; --line:#2a3646;
+    --accent:#8fb4e3; --accent-ink:#0f1620; --soft:#1d2a3b; --ok:#7fcf9f; --dot:#5e6e82;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#16130f; --card:#201c17; --ink:#f2ece3; --muted:#b4aa9d; --line:#3a332b;
-  --accent:#e58aa7; --accent-ink:#1a1014; --soft:#2c1f25; --ok:#7fcf9f; --dot:#6b6258;
+  --bg:#0f1620; --card:#18222f; --ink:#eaf0f7; --muted:#a9b6c6; --line:#2a3646;
+    --accent:#8fb4e3; --accent-ink:#0f1620; --soft:#1d2a3b; --ok:#7fcf9f; --dot:#5e6e82;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -77,8 +77,8 @@ nav b,nav a{white-space:nowrap}
 .hero{padding-top:48px}
 .hero{position:relative;overflow:hidden;padding-bottom:72px}
 .hero-grid{position:relative;z-index:1}
-.fan{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 28%,#000 58%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 28%,#000 58%)}
-@media(max-width:819px){.fan{opacity:.55;-webkit-mask-image:none;mask-image:none}}
+.bgc{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 28%,#000 58%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 28%,#000 58%)}
+@media(max-width:819px){.bgc{opacity:.45;-webkit-mask-image:none;mask-image:none}}
 .hero-grid{display:grid;gap:36px;grid-template-columns:1fr;align-items:center}
 @media(min-width:820px){.hero-grid{grid-template-columns:1.25fr .75fr}}
 .portrait{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.12)}
@@ -94,6 +94,7 @@ nav b,nav a{white-space:nowrap}
 .ic{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);color:var(--ink);text-decoration:none;background:var(--card);transition:border-color .2s,color .2s,transform .2s}
 .ic:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
 .ic svg{width:19px;height:19px;fill:currentColor}
+button.ic{cursor:pointer;font:inherit;padding:0}
 .ic:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .btn .ico{width:16px;height:16px;fill:currentColor;vertical-align:-2px;margin-right:6px}
 .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card)}
@@ -185,13 +186,14 @@ footer{padding:44px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <a class="ic" href="mailto:tejaswinirtukka@gmail.com" aria-label="Email Tejaswini" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.6 2L12 12.4 19.4 7H4.6zM4 8.9V17h16V8.9l-8 5.8-8-5.8z"/></svg></a>
       <a class="ic" href="https://www.linkedin.com/in/tejaswini-rt/" rel="me noopener" aria-label="Tejaswini on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.54h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.32-1.96 2.69V21h-4V9.75z"/></svg></a>
       <a class="ic" href="Tejaswini-R-Tukka-CV.pdf" aria-label="Download CV as PDF" title="Download CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13h8v1.6H8V13zm0 3.4h8V18H8v-1.6z"/></svg></a>
+      <button class="ic" id="theme" type="button" aria-label="Switch between light and dark" title="Light or dark"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 0 0 17z"/></svg></button>
     </div>
   </div>
 </nav>
 
 <main>
 <header class="hero">
-  <canvas id="fan" class="fan" aria-hidden="true"></canvas>
+  <canvas id="globe" class="bgc" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
       <p class="eyebrow">Strategy and analytics consultant, Dubai</p>
@@ -538,10 +540,17 @@ footer{padding:44px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
     document.getElementById('floor-v').textContent='USD '+floor.toFixed(2);
     document.getElementById('ceil-v').textContent='USD '+ceil.toFixed(1)+'m';
   }
-  fl.addEventListener('input',draw);ce.addEventListener('input',draw);draw();
+  fl.addEventListener('input',draw);ce.addEventListener('input',draw);draw();document.addEventListener('themechange',draw);
   if(window.matchMedia){window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);}
 })();
 </script>
-<script src="fan.js" defer></script>
+<script>
+(function(){var root=document.documentElement,b=document.getElementById('theme');
+function cur(){var t=root.getAttribute('data-theme');if(t)return t;return matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}
+try{var s=localStorage.getItem('theme');if(s==='light'||s==='dark')root.setAttribute('data-theme',s)}catch(e){}
+if(b)b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}document.dispatchEvent(new Event('themechange'))})})();
+</script>
+<script src="globe-data.js" defer></script>
+<script src="globe.js" defer></script>
 </body>
 </html>
